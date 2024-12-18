@@ -26,9 +26,79 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .attend {
+        background-color: #351334; 
+        color: #ffffff; /* White text */
+    }
+    .feature-box {
+        background-color: #4A1A46; /* Slightly lighter blue */
+        border-radius: 8px;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        color: #fff;
+        margin: 1rem 0;
+    }
+    .feature-icon {
+        font-size: 2.5rem;
+        color: #b89458; /* Yellow color */
+    }
+    .feature-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        color: #b89458;
+    }
+    .feature-text {
+        margin-top: 0.75rem;
+        font-size: 0.95rem;
+    }
+    .bg-custom {
+      background: #b89458;
+    }
+</style>
 </head>
 
 <body>
+
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <!-- Close button -->
+
+        <div class="modal-body d-flex align-items-center">
+          <!-- Image on the left -->
+          <img src="images/about-img.jpg" alt="Picture" class="img-fluid me-3" style="width: 400px; height: auto;">
+          
+          <!-- Content on the right -->
+          <div class="p-3 text-center">
+            <h5 class="modal-title mb-3" style="font-weight: bold;">Special Announcement</h5>
+            <p>Nominate your favorite candidate today!</p>
+            <button type="button" class="btn btn-primary" onclick="nominateNow()">Nominate Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+<script>
+  // Show the modal after 6 seconds
+  window.onload = function() {
+    setTimeout(function() {
+      const modal = new bootstrap.Modal(document.getElementById('myModal'));
+      modal.show();
+    }, 8000);
+  };
+
+  // Button click handler
+  function nominateNow() {
+    alert('Nomination process started!');
+  }
+</script>
+
   <div class="hero_area">
     <!-- header section strats -->
    <header class="header_section">
@@ -55,11 +125,11 @@
             <a class="" href="about.html">
               About
             </a>
-            <a class="" href="service.html">
-              Services
+            <a class="" href="sponsor.html">
+              Sponsors
             </a>
-            <a class="" href="testimonial.html">
-              Testimonial
+            <a class="" href="speaker.html">
+             Speakers
             </a>
             <a class="" href="news.html">
               Latest News
@@ -116,20 +186,18 @@
                 <div class="heading_box">
                   <h1 class="text-info">
                     <span>
-                      We
-                    </span>
-                    <span>
-                      Can
-                    </span>
-                    <span>  
-                      Grow
+                      Celebrate
                     </span>
                     <span>
                       Your
                     </span>
                     <span>
-                      Business
+                      Manufacturing
                     </span>
+                    <span>
+                      Excellence
+                    </span>
+                    
                   </h1>
                 </div>
               </div>
@@ -137,20 +205,18 @@
                 <div class="heading_box">
                   <h1 class="text-info">
                     <span>
-                      We
+                      Recognize
                     </span>
                     <span>
-                      Can
+                      Industry
                     </span>
                     <span>
-                      Grow
+                      Leading
                     </span>
                     <span>
-                      Your
+                      Achievements
                     </span>
-                    <span>
-                      Business
-                    </span>
+                    
                   </h1>
                 </div>
               </div>
@@ -158,20 +224,18 @@
                 <div class="heading_box">
                   <h1 class="text-info">
                     <span>
-                      We
-                    </span>
-                    <span>
-                      Can
-                    </span>
-                    <span>
-                      Grow
+                      Showcase
                     </span>
                     <span>
                       Your
                     </span>
                     <span>
-                      Business
+                      Innovation
                     </span>
+                    <span>
+                      Globally
+                    </span>
+                    
                   </h1>
                 </div>
               </div>
@@ -191,13 +255,13 @@
           <div class="carousel slide slider_image_carousel carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/slider-img.jpeg" alt="">
+                <img src="images/slider-img.jpg" alt="">
               </div>
               <div class="carousel-item">
-                <img src="images/slider-img2.jpeg" alt="">
+                <img src="images/slider-img.jpg" alt="">
               </div>
               <div class="carousel-item">
-                <img src="images/slider-img3.jpeg" alt="">
+                <img src="images/slider-img.jpg" alt="">
               </div>
             </div>
           </div>
@@ -226,11 +290,11 @@
           <div class="box">
             <div class="number_box">
               <h5>
-                01
+                20+
               </h5>
             </div>
             <h4>
-              Research Project
+           Countries
             </h4>
           </div>
         </div>
@@ -238,11 +302,11 @@
           <div class="box">
             <div class="number_box">
               <h5>
-                02
+                11+
               </h5>
             </div>
             <h4>
-              Find Ideas
+              Industries
             </h4>
           </div>
         </div>
@@ -250,11 +314,11 @@
           <div class="box">
             <div class="number_box">
               <h5>
-                03
+                16+
               </h5>
             </div>
             <h4>
-              Start Optimize
+             Winners
             </h4>
           </div>
         </div>
@@ -262,11 +326,11 @@
           <div class="box">
             <div class="number_box">
               <h5>
-                04
+                60+
               </h5>
             </div>
             <h4>
-              Reach Target
+             Regions
             </h4>
           </div>
         </div>
@@ -275,6 +339,8 @@
   </section>
 
   <!-- end feature section -->
+
+  
 
   <!-- about section -->
 
@@ -315,27 +381,189 @@
 
   <!-- end about section -->
 
+  <section class="wedo_section ">
+    <div class="p-5">
+      <div class="heading_container">
+        <h2>
+          Who Should Attend
+        </h2>
+        <p>
+          The event is specifically designed for representatives from manufacturing companies across diverse sectors, celebrating their achievements and innovation.
+        </p>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3 mt-3">
+          <div class="card">
+              <img src="images/Exploring Advanced Techniques in Metal Fabrication Courses.jpg" class="card-img-top" alt="GM Awards">
+              <div class="card-img-overlay-title text-center">
+                  <h5 class="text-white bg-custom px-3 py-1 d-inline">Automotive Manufacturing</h5>
+              </div>
+              <div class="card-body text-center">
+                  <p> Companies involved in the production of automobiles, automotive parts, and related components.</p>
+                  <a href="#" class="btn btn-primary me-2">Read More</a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="col-md-3 mt-3">
+        <div class="card">
+            <img src="images/food.jpg" class="card-img-top" alt="GM Awards">
+            <div class="card-img-overlay-title text-center">
+                <h5 class="text-white bg-custom px-3 py-1 d-inline"> Food and Beverage Manufacturing</h5>
+            </div>
+            <div class="card-body text-center">
+                <p>   Companies manufacturing food products, beverages, and food-related items.</p>
+                <a href="#" class="btn btn-primary me-2">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mt-3">
+      <div class="card">
+          <img src="images/textile.jpg" class="card-img-top" alt="GM Awards">
+          <div class="card-img-overlay-title text-center">
+              <h5 class="text-white bg-custom px-3 py-1 d-inline"> Textile and Apparel Manufacturing</h5>
+          </div>
+          <div class="card-body text-center">
+              <p>  Companies producing textiles, fabrics, clothing, and fashion accessories.</p>
+              <a href="#" class="btn btn-primary me-2">Read More</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-md-3 mt-3">
+    <div class="card">
+        <img src="images/electronics.jpg" class="card-img-top" alt="GM Awards">
+        <div class="card-img-overlay-title text-center">
+            <h5 class="text-white bg-custom px-3 py-1 d-inline"> Electronics and Electrical Manufacturing</h5>
+        </div>
+        <div class="card-body text-center">
+            <p>  Companies involved in manufacturing electronic devices, electrical equipment, and components.</p>
+            <a href="#" class="btn btn-primary me-2">Read More</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3 mt-3">
+  <div class="card">
+      <img src="images/health.jpg" class="card-img-top" alt="GM Awards">
+      <div class="card-img-overlay-title text-center">
+          <h5 class="text-white bg-custom px-3 py-1 d-inline"> Pharmaceutical and Medical Device Manufacturing</h5>
+      </div>
+      <div class="card-body text-center">
+          <p> Companies producing pharmaceuticals, medical devices, and healthcare-related products.</p>
+          <a href="#" class="btn btn-primary me-2">Read More</a>
+      </div>
+  </div>
+</div>
+  
+<div class="col-md-3 mt-3">
+  <div class="card">
+      <img src="images/chemical.jpg" class="card-img-top" alt="GM Awards">
+      <div class="card-img-overlay-title text-center">
+          <h5 class="text-white bg-custom px-3 py-1 d-inline">Chemical and Plastics Manufacturing</h5>
+      </div>
+      <div class="card-body text-center">
+          <p>Companies engaged in the production of chemicals, plastics, and related materials.</p>
+          <a href="#" class="btn btn-primary me-2">Read More</a>
+      </div>
+  </div>
+</div>
+  
+
+<div class="col-md-3 mt-3">
+  <div class="card">
+      <img src="images/energy.jpg" class="card-img-top" alt="GM Awards">
+      <div class="card-img-overlay-title text-center">
+          <h5 class="text-white bg-custom px-3 py-1 d-inline">  Renewable Energy and Green Technology</h5>
+      </div>
+      <div class="card-body text-center">
+          <p> Companies involved in manufacturing renewable energy products and green technologies.</p>
+          <a href="#" class="btn btn-primary me-2">Read More</a>
+      </div>
+  </div>
+</div>
+<div class="col-md-3 mt-3">
+  <div class="card">
+      <img src="images/machine.jpg" class="card-img-top" alt="GM Awards">
+      <div class="card-img-overlay-title text-center">
+          <h5 class="text-white bg-custom px-3 py-1 d-inline">  Machinery and Equipment Manufacturing</h5>
+      </div>
+      <div class="card-body text-center">
+          <p>  Companies producing industrial machinery, equipment, and machinery parts.</p>
+          <a href="#" class="btn btn-primary me-2">Read More</a>
+      </div>
+  </div>
+</div>
+   
+ 
+      </div>
+    </div>
+  </section>
+
+  <hr style="border: 0.1px solid #351334; margin: 40px 0;">
+
+
+  <section class="mb-5 container">
+    <h2 class="text-center text-primary mb-4" style="font-weight: bold;">Applicable Fees</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="bg-primary text-white">
+          <tr>
+            <th style="width: 50%;">Fees</th>
+            <th style="width: 50%;">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Early Bird</strong><br>
+              <ul>
+                <li>USD 1,000</li>
+                <li>Payable by <strong>November 30, 2023</strong></li>
+              </ul>
+             
+            </td>
+            <td>
+              <span>This is the best deal, so don't miss out! Register by <strong>November 30, 2023</strong>, and save <strong>USD 200.</strong></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Normal</strong><br>
+              <ul>
+                <li>USD 1,200</li>
+                <li>Payable by <strong>January 31, 2024</strong></li>
+              </ul>
+             
+            </td>
+            <td>
+              <span>Register by <strong>January 31, 2024</strong>, and save <strong>USD 300.</strong></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Late Registration</strong><br>
+              <ul>
+                <li>USD 1,500</li>
+                <li>Payable by <strong>March 10, 2024</strong></li>
+              </ul>
+            </td>
+            <td>
+              <span>Register by <strong>March 10, 2024</strong>, and pay the full price.</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+
   <!-- help section -->
 
   <section class="help_section layout_padding2">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                Let Us Help <br>
-                You Get More
-              </h2>
-            </div>
-            <p>
-              using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a searchusing 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search
-            </p>
-            <a href="">
-              See Videos
-            </a>
-          </div>
-        </div>
         <div class="col-md-6">
           <div class="img-box">
             <img src="images/help-img.jpg" alt="" />
@@ -346,6 +574,24 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Celebrate <br>
+                Your Manufacturing Excellence
+              </h2>
+            </div>
+            <p>
+              The Africa Manufacturing Awards 2024 is your opportunity to showcase your achievements, innovations, and leadership within the manufacturing industry. Join us to celebrate excellence, connect with industry leaders, and gain recognition on a global stage. Elevate your brand, inspire growth, and be part of the future of African manufacturing.
+            </p>
+            <a href="">
+              Learn More
+            </a>
+          </div>
+          
+        </div>
+       
       </div>
     </div>
   </section>
@@ -357,16 +603,16 @@
 
 
   <section class="wedo_section layout_padding">
-    <div class="container">
-      <div class="heading_container text-center">
-        <h2>Confirmed Speakers</h2>
+    <div class="px-5">
+      <div class="heading_container text-center mb-3">
+        <h2 class="mb-3">Confirmed Speakers</h2>
         <p>
           The Africa Manufacturing Awards presents a stellar lineup of technology experts and manufacturing leaders. Join us for insightful discussions with these esteemed speakers.
         </p>
       </div>
       <div class="row">
         <!-- Speaker Cards: 4 per row -->
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/prof.jpeg" class="card-img-top img-fluid rounded" alt="Abdoulaye Mar Dieye">
             <div class="card-body text-center">
@@ -375,7 +621,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/4f1e4888-8593-46a8-898f-85b82e36173d.jpeg" class="card-img-top img-fluid rounded" alt="Duncan Stevens">
             <div class="card-body text-center">
@@ -384,7 +630,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/7d1acecd-7e08-4be8-80ed-cc6429ef84bd.jpeg" class="card-img-top img-fluid rounded" alt="Mick Davis">
             <div class="card-body text-center">
@@ -393,7 +639,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/af5c6c4e-e48c-45a7-9d7d-cd7e1f135962.jpeg" class="card-img-top img-fluid rounded" alt="Stella Paul">
             <div class="card-body text-center">
@@ -402,11 +648,8 @@
             </div>
           </div>
         </div>
-      </div>
-  
-      <div class="row">
-        <!-- Additional Speaker Cards: 4 per row -->
-        <div class="col-md-3 col-lg-3 mb-4">
+    
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/Best Business Headshot Photographer in Cleveland.jpeg" class="card-img-top img-fluid rounded" alt="Akinwumi Adesina">
             <div class="card-body text-center">
@@ -415,7 +658,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/Best Professional Headshots in Orange County - Irvine, CA — ZIBA PHOTO VIDEO.jpeg" class="card-img-top img-fluid rounded" alt="Dr. Amina Suleiman">
             <div class="card-body text-center">
@@ -424,7 +667,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/It’s my moment🤎 Thank you @garvin_mungai for….jpeg" class="card-img-top img-fluid rounded" alt="Mr. Kwame Osei">
             <div class="card-body text-center">
@@ -433,7 +676,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/Jermain Kerman - Corporate.jpeg" class="card-img-top img-fluid rounded" alt="Ms. Fatima Mbeki">
             <div class="card-body text-center">
@@ -442,11 +685,8 @@
             </div>
           </div>
         </div>
-      </div>
-  
-      <div class="row">
-        <!-- Final Speaker Cards: 4 per row -->
-        <div class="col-md-3 col-lg-3 mb-4">
+   
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/Olamide Gabriel _ Photography Educator….jpeg" class="card-img-top img-fluid rounded" alt="Ms. Linda Sibanda">
             <div class="card-body text-center">
@@ -455,7 +695,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/5d93deba-a573-4979-bba1-79e0f3ac9eb4.jpeg" class="card-img-top img-fluid rounded" alt="Prof. Samuel Njoroge">
             <div class="card-body text-center">
@@ -464,7 +704,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/Top tips for a LinkedIn Profile Picture - Retratos Barcelona.jpeg" class="card-img-top img-fluid rounded" alt="Eng. Ahmed Abdallah">
             <div class="card-body text-center">
@@ -473,7 +713,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4">
+        <div class="col-md-3 col-lg-2 mb-4">
           <div class="card h-100">
             <img src="images/speakers/Transform Your Online Profile_ Striking Professional Headshots with a Pop of Color.jpeg" class="card-img-top img-fluid rounded" alt="Dr. Ifeoma Okonkwo">
             <div class="card-body text-center">
@@ -485,156 +725,172 @@
       </div>
     </div>
   </section>
-  
-  
 
-  <!-- <section class="wedo_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          What We do
-        </h2>
-        <p>
-          Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now
-        </p>
+
+  <section class="attend">
+    <div class="container py-5">
+      <h2 class="text-center mb-5 fw-bold">Why Attend</h2>
+      <div class="row">
+          <!-- Recognition and Celebration -->
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <div class="feature-icon">
+                      &#127942; <!-- Trophy Icon -->
+                  </div>
+                  <div class="feature-title">Recognition and Celebration</div>
+                  <div class="feature-text">
+                      Celebrate excellence in manufacturing and receive well-deserved recognition for your company's achievements.
+                  </div>
+              </div>
+          </div>
+          <!-- Networking Opportunities -->
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <div class="feature-icon">
+                      &#128101; <!-- Group Icon -->
+                  </div>
+                  <div class="feature-title">Networking Opportunities</div>
+                  <div class="feature-text">
+                      Connect with industry leaders, professionals, and potential partners to foster collaboration and business growth.
+                  </div>
+              </div>
+          </div>
+          <!-- Cutting-Edge Insights -->
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <div class="feature-icon">
+                      &#128214; <!-- Book Icon -->
+                  </div>
+                  <div class="feature-title">Cutting-Edge Insights</div>
+                  <div class="feature-text">
+                      Gain knowledge from keynote speakers and experts on trends, innovations, and best practices in manufacturing.
+                  </div>
+              </div>
+          </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="box pr-0 pr-lg-5">
-            <div class="img-box">
-              <img src="images/client-img1.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Social Marketing
-              </h5>
-              <p>
-                passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
+          <!-- Showcasing Innovation -->
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <div class="feature-icon">
+                      &#9881;&#65039; <!-- Gear Icon -->
+                  </div>
+                  <div class="feature-title">Showcasing Innovation</div>
+                  <div class="feature-text">
+                      Showcase your company's technologies and solutions to an international audience and position yourself as a leader.
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box pr-0 pr-lg-5">
-            <div class="img-box">
-              <img src="images/wedo-img3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Content Marketing
-              </h5>
-              <p>
-                passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
+          <!-- Global Exposure -->
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <div class="feature-icon">
+                      &#127758; <!-- Globe Icon -->
+                  </div>
+                  <div class="feature-title">Global Exposure</div>
+                  <div class="feature-text">
+                      Gain international visibility and connect with global customers and partners for greater outreach.
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box pr-0 pr-lg-5">
-            <div class="img-box">
-              <img src="images/wedo-img4.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Data Analysis
-              </h5>
-              <p>
-                passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
+          <!-- Industry Collaboration -->
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <div class="feature-icon">
+                      &#129309; <!-- Handshake Icon -->
+                  </div>
+                  <div class="feature-title">Industry Collaboration</div>
+                  <div class="feature-text">
+                      Engage with sponsors, explore exhibitions, and form collaborations to enhance competitiveness.
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box pr-0 pr-lg-5">
-            <div class="img-box">
-              <img src="images/wedo-img1.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Digital Marketing
-              </h5>
-              <p>
-                passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section> -->
+      <div class="row">
+          <!-- Celebrate Your Team -->
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <div class="feature-icon">
+                      &#128081; <!-- Crown Icon -->
+                  </div>
+                  <div class="feature-title">Celebrate Your Team</div>
+                  <div class="feature-text">
+                      Recognize and reward your team's dedication while boosting morale and showcasing achievements.
+                  </div>
+              </div>
+          </div>
+          <!-- Strengthen Brand Image -->
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <div class="feature-icon">
+                      &#128240; <!-- Newspaper Icon -->
+                  </div>
+                  <div class="feature-title">Strengthen Brand Image</div>
+                  <div class="feature-text">
+                      Enhance your brand's credibility and reputation within the African manufacturing landscape.
+                  </div>
+              </div>
+          </div>
+          <!-- Seize Growth Opportunities -->
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <div class="feature-icon">
+                      &#128640; <!-- Rocket Icon -->
+                  </div>
+                  <div class="feature-title">Seize Growth Opportunities</div>
+                  <div class="feature-text">
+                      Explore new markets, secure financial linkages, and unlock growth opportunities across Africa and beyond.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+  
 
-  <!-- end we do section -->
 
   <!-- news section -->
-
-  <section class="news_section layout_padding-bottom">
-    <div class="container">
+  <section class="news_section layout_padding-bottom mt-5">
+    <div class="p-5">
       <div class="heading_container">
         <h2>
-          Latest News
+          Africa Manufacturing Awards
         </h2>
         <p>
-          Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now
+          The Africa Manufacturing Awards is a spectacular event offering a wide range of experiences under one roof. Join us for a remarkable journey celebrating excellence in African manufacturing.
         </p>
       </div>
       <div class="row">
-        <div class="col-lg-6 ">
+        <div class="col-lg-9">
           <div class="detail_container">
             <div class="detail-box">
               <h4>
-                Publishing packages Web page
+                Event Highlights
               </h4>
-              <div class="news_social">
-                <a href="">
-                  <i class="fa fa-heart" aria-hidden="true"></i>
-                  <span>
-                    Like
-                  </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-comment" aria-hidden="true"></i>
-                  <span>
-                    Comment
-                  </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-share-alt" aria-hidden="true"></i>
-                  <span>
-                    Share
-                  </span>
-                </a>
-              </div>
-              <p>
-                College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtableCollege in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
-              </p>
+              <ul style="list-style: disc; margin-left: 20px;">
+                <li><strong>Awards Ceremony:</strong> Be part of the prestigious Awards Ceremony, where we recognize and honor the outstanding achievements of manufacturing companies across diverse sectors in Africa. Witness industry leaders being celebrated for their exceptional contributions to the manufacturing landscape.</li>
+                <li><strong>Networking Opportunities:</strong> Engage in valuable networking sessions, connecting with like-minded professionals, industry experts, and potential partners. Forge strategic relationships that can open doors to collaborations, innovations, and business growth.</li>
+                <li><strong>Keynote Speeches:</strong> Immerse yourself in captivating keynote speeches by prominent manufacturing thought leaders and experts. Gain insights into the latest industry trends, innovative technologies, and strategies driving the future of manufacturing in Africa.</li>
+                <li><strong>Inspirational Talks:</strong> Be inspired by success stories and experiences shared by manufacturing pioneers. Learn from their journeys, challenges, and triumphs in navigating the ever-evolving manufacturing landscape.</li>
+                <li><strong>Awards Gala:</strong> Culminate the event with a grand Awards Gala, a night of celebration and recognition. Witness the announcement of the award winners and join in the festivities as we celebrate their remarkable achievements.</li>
+              </ul>
             </div>
             <div class="btn-box">
-              <a href="">
-                Read More
+              <a href="#">
+                Learn More
               </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 ">
+        <div class="col-lg-3">
           <div class="img-box">
-            <img src="images/news-img.jpg" alt="">
+            <img src="images/about-img.jpg" alt="Africa Manufacturing Awards" style="width: 100%; border-radius: 8px;">
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- end news section -->
 
@@ -731,63 +987,136 @@
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
+
+
+  <!-- SPONSORSHIP RATES Section -->
+<!-- <section class="container">
+  <h2 class="text-center text-primary mt-4">Sponsorship Rates</h2>
+  <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+          <thead class="table-primary">
+              <tr>
+                  <th>Sponsorship Level</th>
+                  <th>Benefits</th>
+                  <th>Cost</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Platinum Sponsor</td>
+                  <td>Booth at the event, logo on all marketing materials, speaking slot at the event</td>
+                  <td><strong>USD 10,000</strong></td>
+              </tr>
+              <tr>
+                  <td>Gold Sponsor</td>
+                  <td>Booth at the event, logo on all marketing materials, mention at the event</td>
+                  <td><strong>USD 5,000</strong></td>
+              </tr>
+              <tr>
+                  <td>Silver Sponsor</td>
+                  <td>Booth at the event and logo on all marketing materials</td>
+                  <td><strong>USD 2,500</strong></td>
+              </tr>
+              <tr>
+                  <td>Bronze Sponsor</td>
+                  <td>Logo on all marketing materials</td>
+                  <td><strong>USD 1,000</strong></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</section> -->
+
+<section class="px-5 mt-5">
+  <h2 class="text-center text-primary mb-5" style="font-weight: bold;">Sponsorship Rates</h2>
+  <div class="row g-4">
+      <!-- Platinum Sponsor -->
+      <div class="col-md-3 ">
+          <div class="card text-center p-2">
+              <div class="fa-2x">USD 10,000</div>
+              <div class="card-body">
+                  <h5 class="sponsorship-title" style="font-weight: bold;">Platinum Sponsor</h5>
+                  <p class="benefits text-black-50">Booth at the event, logo on all marketing materials, speaking slot at the event</p>
+                  <a href="#" class="btn text-white w-100 bg-primary mt-3">Buy Now</a>
+              </div>
+          </div>
+      </div>
+      <!-- Gold Sponsor -->
+      <div class="col-md-3">
+        <div class="card text-center p-2">
+              <div class="fa-2x">USD 5,000</div>
+              <div class="card-body">
+                  <h5 class="sponsorship-title" style="font-weight: bold;">Gold Sponsor</h5>
+                  <p class="benefits text-black-50">Booth at the event, logo on all marketing materials, mention at the event</p>
+                  <a href="#" class="btn text-white w-100 bg-primary mt-3">Buy Now</a>
+              </div>
+          </div>
+      </div>
+      <!-- Silver Sponsor -->
+      <div class="col-md-3">
+        <div class="card text-center p-2">
+              <div class="fa-2x" >USD 2,500</div>
+              <div class="card-body">
+                  <h5 class="sponsorship-title" style="font-weight: bold;">Silver Sponsor</h5>
+                  <p class="benefits text-black-50">Booth at the event and logo on all marketing materials</p>
+                  <a href="#" class="btn text-white w-100 bg-primary mt-3">Buy Now</a>
+              </div>
+          </div>
+      </div>
+      <!-- Bronze Sponsor -->
+      <div class="col-md-3">
+        <div class="card text-center p-2">
+              <div class="fa-2x">USD 1,000</div>
+              <div class="card-body">
+                  <h5 class="sponsorship-title" style="font-weight: bold;">Bronze Sponsor</h5>
+                  <p class="benefits text-black-50">Logo on all marketing materials</p>
+                  <a href="#" class="btn text-white w-100 bg-primary mt-3">Buy Now</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
   
   <!-- end client section -->
 
 
   <!-- contact section -->
 
-  <section class="contact_section layout_padding">
+  <section class="contact_section mt-5">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-2">
-          <div class="form_container">
-            <div class="heading_container">
-              <h2>
-                Contact Now For Work
-              </h2>
-            </div>
-            <form action="#">
-              <div>
-                <input type="text" placeholder="Full Name " />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6  px-0">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
-          </div>
+        <div class="col-md-12 px-0 text-center" 
+             style="background-image: 
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+                    url(../images/NOMINATE.jpg); 
+                    /* background-size: cover;  */
+                    background-position: center; 
+                    /* background-repeat: no-repeat;  */
+                    height: 200px;
+                    display: flex; 
+                    flex-direction: column; 
+                    justify-content: center; 
+                    align-items: center; 
+                    color: white;">
+          <h2>Register Your Company Now !!!</h2>
+          <p>LIMTED TIME OFFER : No Registration Fee !! No Nomination Fee !!!</p>
+          <button class="btn btn-primary">Nominate Now</button>
         </div>
       </div>
     </div>
   </section>
-
+  
+  
   <!-- end contact section -->
 
 
   <!-- info section -->
 
-  <section class="info_section layout_padding2">
+  <section class="info_section layout_padding2 ">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -805,13 +1134,13 @@
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Call +255717109362
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  manufacturingawards@africa.com
                 </span>
               </a>
             </div>
@@ -897,8 +1226,8 @@
       <div class="row">
         <div class="col-md-8 mx-auto">
           <p>
-            &copy; <span id="displayYear"></span> All Rights Reserved. Design by
-            <a href="https://html.design/">Filbert Ayo</a>
+            &copy; <span id="displayYear"></span> Africa Manufacturing Awards 2024. Design by
+            <a target = '_blank' href="https://filbertayo-flax-xi.vercel.app">Filbert Ayo</a>
           </p>
         </div>
       </div>
