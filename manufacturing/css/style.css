@@ -17,8 +17,8 @@ body {
 }
 
 .layout_padding2 {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 45px;
+  padding-bottom: 15px;
 }
 
 .layout_padding2-top {
@@ -1412,7 +1412,7 @@ a:focus {
 
 /* info section */
 .info_section {
-  background-color: #351334;
+  background-color: #2C2C2C;
   color: #ffffff;
 }
 
@@ -1549,7 +1549,7 @@ a:focus {
 /* end info section */
 /* footer section*/
 .footer_section {
-  background-color: #351334;
+  background-color: #2C2C2C;
   text-align: center;
   color: #ffffff;
 }
@@ -1565,3 +1565,8 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.bg-custom {
+  background: #b89458;
+}
