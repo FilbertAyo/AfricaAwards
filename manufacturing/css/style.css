@@ -1570,3 +1570,54 @@ a:focus {
 .bg-custom {
   background: #b89458;
 }
+
+
+.attend {
+  background-color: #351334; 
+  color: #ffffff; /* White text */
+}
+.feature-box {
+  background-color: #4A1A46; /* Slightly lighter blue */
+  border-radius: 8px;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+.feature-icon {
+  font-size: 2.5rem;
+  color: #b89458; /* Yellow color */
+}
+.feature-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #b89458;
+}
+.feature-text {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.card {
+background: linear-gradient(to bottom left, #b89458, #351334);
+color: white; /* Adjust text color for better contrast */
+border: none; /* Optional: remove default card border */
+}
+.card-img-top {
+object-fit: cover;
+width: 100%;
+height: auto;
+}
+.card-img-overlay-title h5 {
+background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+border-radius: 5px; /* Rounded corners for text background */
+}
+.btn-primary {
+background-color: #351334;
+border-color: #351334;
+}
+.btn-primary:hover {
+background-color: #b89458;
+border-color: #b89458;
+}
