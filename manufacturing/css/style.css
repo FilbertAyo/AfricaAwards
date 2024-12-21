@@ -1621,3 +1621,33 @@ border-color: #351334;
 background-color: #b89458;
 border-color: #b89458;
 }
+
+  /* Social media container styles */
+  .social-media {
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(to bottom, #b89458, #351334);
+    border-radius: 8px 0 0 8px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Icon styles */
+  .social-media a {
+    margin: 8px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s, color 0.3s;
+  }
+
+  .social-media a:hover {
+    transform: scale(1.2);
+    color: #ffdd55;
+  }
